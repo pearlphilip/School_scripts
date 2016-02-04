@@ -11,9 +11,9 @@ import pandas as pd
 def download_if_needed(url, filename):
 
     """ Downloads the data from a given URL, if not already present in the directory, or displays any of the following:
-        1. The file already exists
-        2. URL does not exist
-        3. Server is not responding
+        1. The file already exists.
+        2. URL does not exist.
+        3. Server is not responding.
     """
 
     if os.path.exists(filename):
