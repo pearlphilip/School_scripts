@@ -12,7 +12,7 @@ class TestDownload_if_needed(unittest.TestCase):
         self.assertEqual('open_data_year_one.zip already exists', result)  
     
     # Test for existent url and download.
-    def test_url_exists(self):
+    def test_url_existent(self):
         remove_data('open_data_year_one.zip')
         result = download_if_needed('https://s3.amazonaws.com/pronto-data/open_data_year_one.zip', 'open_data_year_one.zip')
         self.assertEqual('downloading', result)
